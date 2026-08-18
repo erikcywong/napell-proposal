@@ -224,6 +224,38 @@
     });
   }
 
+  /* copy-to-clipboard for .copy-btn elements (WeChat number, etc.) */
+  function initCopyButtons() {
+    document.addEventListener('click', function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest('.copy-btn') : null;
+      if (!btn) return;
+      var val = btn.getAttribute('data-copy') || '';
+      var label = btn.getAttribute('data-label') || btn.textContent;
+      function done() {
+        btn.textContent = t('contact.copied');
+        btn.classList.add('copied');
+        setTimeout(function () { btn.textContent = label; btn.classList.remove('copied'); }, 1500);
+      }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = val;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (err) {}
+        document.body.removeChild(ta);
+        done();
+      }
+      if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(val).then(done, function () { fallback(); });
+      } else {
+        fallback();
+      }
+    });
+  }
+
   /* ---------- boot ---------- */
   function boot() {
     applyUI();
@@ -233,6 +265,7 @@
     route();
     initBackTop();
     initHamburger();
+    initCopyButtons();
 
     window.addEventListener('hashchange', route);
 

@@ -26,7 +26,11 @@ window.I18N.ui = {
       ctaPrimary: 'Executive Summary',
       ctaSecondary: 'Financial Model'
     },
+    contact: {
+      copied: 'Copied!'
+    },
     footer: {
+      contact: 'Contact',
       tagline: 'Industrializing coffee seedling production with aeroponic precision.',
       source: 'Data source: napell.space — Longgang aeroponic seedling base operating cost analysis.',
       disclaimer: 'Financial figures are estimates based on current market conditions and do not constitute a return guarantee.',
@@ -46,7 +50,11 @@ window.I18N.ui = {
       ctaPrimary: '执行摘要',
       ctaSecondary: '财务模型'
     },
+    contact: {
+      copied: '已复制！'
+    },
     footer: {
+      contact: '联系方式',
       tagline: '以工业化的确定性节奏，重构全球咖啡育苗产业。',
       source: '数据来源：napell.space — 龙岗气雾栽培育苗基地运营成本分析。',
       disclaimer: '财务数据为基于当前市场条件的估算，不构成收益承诺。',
@@ -66,7 +74,11 @@ window.I18N.ui = {
       ctaPrimary: 'الملخص التنفيذي',
       ctaSecondary: 'النموذج المالي'
     },
+    contact: {
+      copied: 'تم النسخ!'
+    },
     footer: {
+      contact: 'تواصل معنا',
       tagline: 'تصنيع إنتاج شتلات البن بدقة الزراعة الهوائية.',
       source: 'مصدر البيانات: napell.space — تحليل تكلفة تشغيل قاعدة شتلات لونغغانغ الهوائية.',
       disclaimer: 'الأرقام المالية تقديرات تستند إلى ظروف السوق الحالية ولا تشكل ضماناً للعائد.',
@@ -125,6 +137,13 @@ window.I18N.nav = {
       items: [
         { id: 'risks', label: { en: 'Risks & Mitigation', zh: '风险与应对', ar: 'المخاطر والمعالجة' } },
         { id: 'appendix', label: { en: 'Appendix', zh: '附录', ar: 'الملحق' } }
+      ]
+    },
+    {
+      id: 'contact',
+      label: { en: 'Contact', zh: '联系', ar: 'اتصال' },
+      items: [
+        { id: 'contact', label: { en: 'Contact us', zh: '联系我们', ar: 'تواصل معنا' } }
       ]
     }
   ]
