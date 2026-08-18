@@ -122,7 +122,8 @@ window.I18N.nav = {
       label: { en: 'Solution', zh: '解决方案', ar: 'الحل' },
       items: [
         { id: 'solution', label: { en: 'Product & Technology', zh: '产品与技术', ar: 'المنتج والتقنية' } },
-        { id: 'patents', label: { en: 'Patents & Know-how', zh: '专利与技术诀窍', ar: 'براءات الاختراع والخبرة' } }
+        { id: 'patents', label: { en: 'Patents & Know-how', zh: '专利与技术诀窍', ar: 'براءات الاختراع والخبرة' } },
+        { id: 'seed-samples', label: { en: 'Seed Samples', zh: '种子样品', ar: 'عينات البذور' } }
       ]
     },
     {

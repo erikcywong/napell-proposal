@@ -257,6 +257,30 @@
     });
   }
 
+  /* image lightbox for gallery photos */
+  function initLightbox() {
+    var lb = $('#lightbox');
+    var lbImg = $('#lightbox-img');
+    if (!lb || !lbImg) return;
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (t && t.classList && t.classList.contains('lightbox-close')) {
+        lb.setAttribute('hidden', '');
+        return;
+      }
+      var item = t && t.closest ? t.closest('.gallery-item') : null;
+      if (!item) return;
+      var img = item.querySelector ? item.querySelector('img') : null;
+      var full = item.getAttribute('data-full') || (img ? img.getAttribute('src') : '');
+      if (!full) return;
+      lbImg.setAttribute('src', full);
+      lb.removeAttribute('hidden');
+    });
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb) lb.setAttribute('hidden', '');
+    });
+  }
+
   /* ---------- boot ---------- */
   function boot() {
     applyUI();
@@ -267,6 +291,7 @@
     initBackTop();
     initHamburger();
     initCopyButtons();
+    initLightbox();
 
     window.addEventListener('hashchange', route);
 
