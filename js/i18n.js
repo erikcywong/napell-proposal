@@ -24,7 +24,8 @@ window.I18N.ui = {
     home: {
       eyebrow: 'Business Plan · Fundraising',
       ctaPrimary: 'Executive Summary',
-      ctaSecondary: 'Financial Model'
+      ctaSecondary: 'Financial Model',
+      ctaDashboard: 'View Dashboard'
     },
     contact: {
       copied: 'Copied!'
@@ -48,7 +49,8 @@ window.I18N.ui = {
     home: {
       eyebrow: '商业计划书 · 融资用途',
       ctaPrimary: '执行摘要',
-      ctaSecondary: '财务模型'
+      ctaSecondary: '财务模型',
+      ctaDashboard: '查看仪表盘'
     },
     contact: {
       copied: '已复制！'
@@ -72,7 +74,8 @@ window.I18N.ui = {
     home: {
       eyebrow: 'خطة عمل · تمويل',
       ctaPrimary: 'الملخص التنفيذي',
-      ctaSecondary: 'النموذج المالي'
+      ctaSecondary: 'النموذج المالي',
+      ctaDashboard: 'عرض لوحة المؤشرات'
     },
     contact: {
       copied: 'تم النسخ!'
@@ -99,11 +102,19 @@ window.I18N.nav = {
       ]
     },
     {
+      id: 'dashboard',
+      label: { en: 'Dashboard', zh: '仪表盘', ar: 'لوحة المؤشرات' },
+      items: [
+        { id: 'dashboard', label: { en: 'Key Figures', zh: '关键数据', ar: 'الأرقام الرئيسية' } }
+      ]
+    },
+    {
       id: 'market',
       label: { en: 'Market', zh: '市场', ar: 'السوق' },
       items: [
         { id: 'market-problem', label: { en: 'Market Problem', zh: '市场痛点', ar: 'مشكلة السوق' } },
-        { id: 'market-opportunity', label: { en: 'Market Opportunity', zh: '市场机会', ar: 'فرص السوق' } }
+        { id: 'market-opportunity', label: { en: 'Market Opportunity', zh: '市场机会', ar: 'فرص السوق' } },
+        { id: 'crisis-2050', label: { en: '2050 Coffee Crisis', zh: '2050 咖啡危机', ar: 'أزمة البن 2050' } }
       ]
     },
     {

@@ -119,7 +119,7 @@
       html += '<div class="dropdown">';
       g.items.forEach(function (item, i) {
         html += '<a class="dropdown-item' + (item.id === activeId ? ' active' : '') + '" href="#/' + item.id + '">' +
-                '<span class="idx">' + (i + 1) + '</span>' + esc(item.label[lang]) + '</a>';
+                esc(item.label[lang]) + '</a>';
       });
       html += '</div></div>';
     });
@@ -190,7 +190,8 @@
       '<h1>' + (pt.title || '') + '</h1>' +
       '<p class="lede">' + (pt.subtitle || '') + '</p>' +
       '<div class="hero-actions">' +
-        '<a class="btn btn-primary" href="#/executive-summary">' + esc(t('home.ctaPrimary')) + '</a>' +
+        '<a class="btn btn-primary" href="#/dashboard">' + esc(t('home.ctaDashboard')) + '</a>' +
+        '<a class="btn btn-ghost" href="#/executive-summary">' + esc(t('home.ctaPrimary')) + '</a>' +
         '<a class="btn btn-ghost" href="#/financial-model">' + esc(t('home.ctaSecondary')) + '</a>' +
       '</div></section>' +
       '<div class="kpi-grid">' + kpis + '</div>' +
