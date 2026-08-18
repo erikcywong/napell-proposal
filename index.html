@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NAPELL — Aeroponic (mist hydroponic) coffee seedling business plan." />
+  <title>NAPELL · Aeroponic Coffee Seedling Proposal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Naskh+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e7a55'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='18' font-weight='800' fill='%23d9a441' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Language selection modal -->
+  <div id="lang-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="lang-modal-title" hidden>
+    <div class="modal">
+      <div class="modal-brand" aria-hidden="true">NAPELL</div>
+      <h2 id="lang-modal-title" data-i18n="modal.title">Choose your language</h2>
+      <p class="modal-sub" data-i18n="modal.subtitle">Select your preferred language to continue</p>
+      <div class="lang-options" id="lang-options">
+        <!-- options injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/home" aria-label="NAPELL home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c0-5 0-9-7-9 0 5 0 9 7 9z"/><path d="M12 21c0-5 0-9 7-9 0 5 0 9-7 9z"/><path d="M12 3c-3 2-3 4-3 6h6c0-2 0-4-3-6z"/></svg>
+        </span>
+        <span class="brand-logo">NAPELL</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <!-- nav groups injected by app.js -->
+      </nav>
+
+      <div class="topbar-actions">
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language">
+          <!-- buttons injected by app.js -->
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="content" id="content">
+    <!-- pages rendered by app.js -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-logo small">NAPELL</span>
+        <p data-i18n="footer.tagline">Industrializing coffee seedling production with aeroponic precision.</p>
+      </div>
+      <div class="footer-meta">
+        <p data-i18n="footer.source">Data source: napell.space — Longgang aeroponic seedling base operating cost analysis.</p>
+        <p data-i18n="footer.disclaimer">Financial figures are estimates based on current market conditions and do not constitute a return guarantee.</p>
+        <p class="footer-copy">© <span id="year"></span> NAPELL. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="back-top" data-i18n-title="ui.backTop" aria-label="Back to top">↑</button>
+
+  <!-- i18n data + app -->
+  <script src="js/i18n.js"></script>
+  <script src="js/pages/overview.js"></script>
+  <script src="js/pages/market.js"></script>
+  <script src="js/pages/solution.js"></script>
+  <script src="js/pages/business.js"></script>
+  <script src="js/pages/financials.js"></script>
+  <script src="js/pages/risks-appendix.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
