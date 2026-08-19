@@ -34,7 +34,8 @@ npx serve .
 
 ## Live site
 
-<https://erikcywong.github.io/napell-proposal/>
+- Custom domain: <https://www.saudicoffee.ltd/>
+- GitHub Pages: <https://erikcywong.github.io/saudicoffee.ltd/>
 
 ---
 
